@@ -46,7 +46,11 @@ html{
 }
 
 .signup-form{
-  transform: rotateY(270deg) translateZ(25rem) translateX(-25rem);  
+  transform: rotateY(270deg) translateZ(25rem) translateX(-25rem);
+  z-index: -1;
+}
+.signin-form{
+    z-index: 1;
 }
 form a{
     position: absolute;
@@ -57,19 +61,25 @@ form a{
     color: rgb(0, 0, 0);
     text-shadow: 5px 4px 15px rgba(0, 0, 0, 0.26);
     letter-spacing: 0.2rem;
+    cursor: pointer;
+    
 }
+
 
 .signup-btn{
     left: 2rem;
     padding: 0.5rem 1rem 0.5rem 3rem;
     border-radius: 100% 0.5rem 0.5rem 100% ;
+    
 }
 
 .signin-btn{
     right: 2rem;
     padding: 0.5rem 3rem 0.5rem 1rem;
     border-radius: .5rem 100% 100% 0.5rem;
+   
 }
+
 
 form h1{
     font-size: 2.3rem;
